@@ -10,7 +10,7 @@ Installing and setting up Mongoose:
 
 Add MongoDB and Mongoose to the project’s package.json.  Store your MongoDB Atlas database URI in the private .env file as MONGO_URI. Surround the URI with single or double quotes and make sure no space exists between both the variable and the`=` and the value and `=`. Connect to the database using the following syntax:
 
-
+`mongoose.connect(<Your URI>, { useNewUrlParser: true, useUnifiedTopology: true }); `
 
  
 
@@ -74,7 +74,7 @@ Find just one person which has a certain food in the person's favorites, using M
 
 Use model.findById() to Search Your Database By _id
 
-Find the (onlynpm start) person having a given _id, using Model.findById() -> Person. Use the function argument personId as the search key.
+Find the (only!!) person having a given _id, using Model.findById() -> Person. Use the function argument personId as the search key.
 
  
 
